@@ -21,7 +21,7 @@ export default function Header() {
     
     return (
         <div className="w-full h-24">
-            <div className="fixed w-full">
+            <div className="absolute w-full">
                 <div className="mx-[250px]">
                     <div className="w-full flex flex-nowrap gap-x-[20px] items-center justify-between">
                         <div className="flex-1 flex flex-nowrap items-center my-[20px]">
