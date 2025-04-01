@@ -1,4 +1,5 @@
 import "../styles/global.css";
+import Navbar from "./layouts/navbar";
 
 export default function Layout({
     children,
@@ -10,7 +11,10 @@ export default function Layout({
         <body>
           {/* Layout UI */}
           {/* Place children where you want to render a page or nested layout */}
-          <main>{children}</main>
+          <main>
+            <Navbar />
+            {children}
+          </main>
         </body>
       </html>
     )

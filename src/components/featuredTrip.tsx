@@ -44,7 +44,7 @@ export default function FeaturedTrip() {
     return (
         <>
             {/* Heading */}
-            <div className="mt-[100px] flex justify-between items-center">
+            <div className="mt-[50px] flex justify-between items-center">
                 <span className="text-[22px] font-[600]">Featured Trips</span>
                 <div className="flex justify-end px-[20px] py-[15px] border rounded-[10px] border-[#E7E6E6]">
                     <span className="text-[12px] font-[200px] ">By Travel Style</span>

@@ -30,7 +30,7 @@ export default function TrustedCompanies() {
 
     return (
         <>
-            <div className="mt-[100px] text-center text-[14px] font-[200]">
+            <div className="mt-[50px] text-center text-[14px] font-[200]">
                 Trusted by world&apos;s best
             </div>
             <div className="flex justify-between items-center mt-[50px]">

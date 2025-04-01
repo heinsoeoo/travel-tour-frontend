@@ -39,7 +39,7 @@ export default function PopularTodo() {
     return (
         <>
             {/* Heading */}
-            <div className="mt-[100px] flex justify-between items-center">
+            <div className="mt-[50px] flex justify-between items-center">
                 <span className="text-[22px] font-[600]">Popular things to do</span>
                 <span className="text-[12px] font-[200]">See all</span>
             </div>
