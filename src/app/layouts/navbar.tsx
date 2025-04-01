@@ -21,20 +21,28 @@ export default function Navbar() {
 
     return (
         <div className="w-full">
-            <div className="absolute mx-[250px]">
-                <div className="w-full flex flex-nowrap gap-x-[20px] items-center justify-between">
-                    <div className="flex-1 flex flex-nowrap items-center my-[20px]">
+            <div className="absolute mx-[250px] z-100">
+                <div className="w-full flex items-center justify-between">
+                    <div className="flex items-center my-[5px]">
                         <Image src={"/logo.png"} alt="Logo" width={150} height={29}/>
-                        <div className="flex items-center h-[29px] ml-[20px]">
+                        <div className="flex items-center h-[60px] ml-[20px]">
                             {leftNavItems.map((item, index) => (
-                                <NavItem key={index} item={{name: item, color: "text-[#000]"}} />
+                                <NavItem key={index} item={{name: item, color: "text-black"}} />
                             ))}
                         </div>
                     </div>
-                    <div className="flex-1 items-center my-[20px]">
-                        <div className="flex items-center justify-end h-[29px]">
+                    <div className="items-center my-[5px]">
+                        <div className="flex items-center justify-end h-[60px]">
                             {rightNavItems.map((item, index) => (
-                                <NavItem key={index} item={{name: item, color: "text-[#fff]"}} />
+                                (item == "Login") ? (
+                                    <div key={index} className={`items-center text-center cursor-pointer w-[5.3em] font-[200]`}>
+                                        <button type="button" className="cursor-pointer bg-transparent border border-[#FFF] hover:border-[#EB662B] text-white hover:text-[#EB662B] rounded-3xl text-[13px] px-4 py-2">
+                                            {item}
+                                        </button>
+                                    </div>
+                                ) : (
+                                    <NavItem key={index} item={{name: item, color: "text-white"}} />
+                                )
                             ))}
                         </div>
                     </div>

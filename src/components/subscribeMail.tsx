@@ -16,7 +16,7 @@ export default function SubscribeMail() {
                     {/* <label htmlFor="search" className="mb-2 text-sm font-medium text-white sr-only">Your email</label> */}
                     <div className="relative">
                         <input type="search" id="search" className="block w-full bg-[#1f1f4f] p-6 ps-10 text-sm text-[#FFF] text-white rounded-lg" placeholder="Your email" />
-                        <button type="submit" className="text-white bg-[#4A43C4] absolute end-2.5 bottom-3 font-medium rounded-lg text-sm px-5 py-3">Subscribe</button>
+                        <button type="button" className="text-white bg-[#4A43C4] absolute end-2.5 bottom-3 font-medium rounded-lg text-sm px-5 py-3">Subscribe</button>
                     </div>
 
                     </div>
