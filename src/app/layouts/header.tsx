@@ -1,4 +1,4 @@
-import NavItem from "@/components/navItem";
+import NavItem from "@/app/layouts/navItem";
 import Image from "next/image";
 
 export default function Header() {

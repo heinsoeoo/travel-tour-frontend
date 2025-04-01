@@ -1,18 +1,55 @@
+import TrustedCompanies from "@/components/trustedCompanies";
 import Header from "./layouts/header"
+import PopularTodo from "@/components/popularTodo";
+import FeaturedTrip from "@/components/featuredTrip";
+import PromotionBanner from "@/components/promotionBanner";
+import TrendingDestinations from "@/components/trendingDestinations";
+import Footer from "./layouts/footer";
 
 export default function Home() {
+
     return (
       <div className="w-screen">
         <Header />
-        <div className="flex flex-col items-center justify-center min-h-screen mx-[250px] py-2">
-          <div className="flex items-center justify-center w-full max-w-4xl px-4 text-center">
-            <h1>Hello, world!</h1>
-            <p>Welcome to my Next.js app!</p>
-            <p>This is a simple example of a Next.js page.</p>
-          </div>
-          <div>
+        <div className="my-[20px]">
+
+          <div className="mx-[250px]">
+
+            {/* Trusted companies */}
+            <TrustedCompanies />
+
+            {/* Popular things to do */}
+            <PopularTodo />
+
+            {/* Featured Trips */}
+            <FeaturedTrip />
 
           </div>
+
+          {/* Promotion Banner */}
+          <PromotionBanner />
+
+          <div className="mx-[250px]">
+
+            {/* Trending destinations */}
+            <TrendingDestinations />
+
+          </div>
+
+          {/* Reviews */}
+
+
+          <div className="mx-[250px]">
+
+            {/* Articles */}
+
+          </div>
+
+          {/* Subscribe */}
+
+          {/* Footer */}
+          <Footer />
+
         </div>
       </div>
     );
